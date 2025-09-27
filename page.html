@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <title>Ошибка 404 - Страница не найдена</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0; padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: url('/WEB-приложения/number-404-with-sad-face-icon-internet-connection-website-problems-theme-3d-illustration_551230-889.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: flex-end; /* Выравниваем по правому краю */
+            align-items: center;
+            color: #e0e6ff;
+        }
+        .overlay {
+            background: rgba(46, 60, 114, 0.75);
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0; left: 0;
+            z-index: 1;
+        }
+        .content {
+            position: relative;
+            z-index: 2;
+            max-width: 600px;
+            margin-right: 5%; /* Отступ справа */
+            text-align: right; /* Текст справа */
+        }
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 0.2em;
+            color: #8da1ff;
+        }
+        h2 {
+            font-weight: 400;
+            font-size: 1.5rem;
+            margin-bottom: 1em;
+            color: #c0c8ff;
+        }
+        p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+            margin-bottom: 1.5em;
+            color: #bac4ff;
+        }
+        a.btn {
+            background-color: #6a79e6;
+            padding: 14px 30px;
+            border-radius: 30px;
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            box-shadow: 0 0 15px #4358d6;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+        }
+        a.btn:hover {
+            background-color: #859aff;
+            box-shadow: 0 0 25px #6f7fff;
+        }
+        @media (max-width: 700px) {
+            .content {
+                max-width: 90%;
+                margin: 0 auto;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="content">
+        <h1>Упс! Что-то пошло не так.</h1>
+        <h2>Этой страницы не существует.</h2>
+        <p>Возможно, она была удалена, переименована или временно недоступна. Мы рекомендуем проверить адрес или вернуться на главную страницу учебного заведения.</p>
+        <a href="index.html" class="btn">На главную</a>
+    </div>
+</body>
+</html>
